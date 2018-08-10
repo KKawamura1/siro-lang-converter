@@ -1,4 +1,4 @@
-## denote -1 to the comment index
+## denote minus 1 to the comment index
 >
 ## now we make this index 0 <[-][ so here, we use all literals (like this + -.- +; ) now that this line is never executed! ]>
 
@@ -80,7 +80,7 @@
  # set 12 for else flag
  >>[-]+<<
  # if NOT 11 neq 6$ then set 8 breaking 11 12
- >------[>-< ------[-]]< >>[<<<<+>>>> [-]]<<
+ >------[>-< ++++++[-]]< >>[<<<<+>>>> [-]]<<
 
  # 10 11 copied 6 breaking 12
  [-]>[-]>[-]<<
@@ -92,7 +92,7 @@
  # set 12 for else flag
  >>[-]+<<
  # if NOT 11 neq 4$ then set 7 breaking 11 12
- >----[>-< ----[-]]< >>[<<<<<+>>>>> [-]]<<
+ >----[>-< ++++[-]]< >>[<<<<<+>>>>> [-]]<<
 
  # break line
  >+>+>+>+>+>+>+>+>+>+<<<<<<<<<<
