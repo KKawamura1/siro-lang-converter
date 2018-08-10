@@ -28,7 +28,7 @@ def main() -> None:
     ords = chars_to_ords(chars)
     num_ords = len(ords)
     ords_with_10bases = [num_to_10bases(num) for num in ords]
-    str1 = '>[-]' * (4 + num_ords) + '<' * (4 + num_ords)
+    str1 = '[-]>' * (4 + num_ords) + '[-]' + '<' * (4 + num_ords)
     str2 = (
         f'++++++++++[>++++++++++[>++++++++++[>++++++++++[> '
         f'{ ">".join(["+" * n for n in [bases10[0] for bases10 in ords_with_10bases]]) } { "<" * (num_ords - 1) } <-]'
