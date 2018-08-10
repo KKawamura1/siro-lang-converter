@@ -1,0 +1,176 @@
+## denote -1 to the comment index
+>
+## now we make this index 0 <[-][ so here, we use all literals (like this + -.- +; ) now that this line is never executed! ]>
+
+
+## make 50$ to 0
+# 0 main integer
+# 1 working space
+>+++++[<++++++++++>-]<
+
+## loop 1 in 0
+# 0 main integer (count down)
+# 1 main integer (count up)
+
+[>+
+ # flat 0 to 1
+
+ ## decompose 1 into upside digit and downside digit
+ # 2 main integer
+ # 3 char a
+ # 4 int a
+ # 5 char b
+ # 6 int b
+
+ # 2 copy of 1 breaking 2 and 3
+ >[-]>[-]<<[>+>+<<-]>>[<<+>>-]<<
+ # flat 1 to 2
+ >
+ # 7 working space
+ >[-]>[-]>[-]>[-]>[-]++++++++[<<++++++<<++++++>>>>-]<<<<<
+ # 7 stores 10$ for carrying
+ >>>>>[-]++++++++++<<<<<
+ # loop for 2 times
+ [
+  # flat 2 to 7
+  ->>>>>-
+  # 8 flag for else
+  >[-]+<
+  # 9 copy of 7
+  # 10 working space
+  >>[-]>[-]<<<[>>+>+<<<-]>>>[<<<+>>>-]<<<
+  # flat 7 to 9
+  >>
+  # if 9 is nonzero then decreases 8 and break 9
+  [<->[-]]
+  # flat 9 to 8
+  <
+  # if 8 is nonzero then add 10$ to 7 and sub 10$ to 6 5 and add 1$ to 4 3 and break 8
+  [-<++++++++++<----------<----------<+<+>>>>>]
+  # increases 6 and 5
+  <<+<+
+  <<<
+  # ensure flat 2
+ ]
+
+ ## 46$ check
+ # 3 char a
+ # 4 int a
+ # 5 char b
+ # 6 int b
+ # 7 flag if 4 is 4$ or 6 is 4$
+ # 8 flag if 4 is 6$ or 6 is 6$
+ # 9 flag if 4 is not 4$ or 6 is not 6$
+ # 10 flag if 4 is 4$ and 6 is 6$
+
+ # flat 2 to 7
+ >>>>>
+ # clear 7 8 9
+ [-]>[-]>[-]<<
+ # flat 7 to 10
+ >>>
+
+ # 10 11 copied 4 breaking 12
+ [-]>[-]>[-]<<
+ <<<<<<[>>>>>>+>+>+<<<<<<<<-]>>>>>> >>[<< <<<<<<+>>>>>> >>-]<<
+ # set 12 for else flag
+ >>[-]+<<
+ # if 10 neq 4$ then set 9 else set 7 breaking 10 12
+ ----[<+> >>-<< ++++[-]] >>[<<<<<+>>>>> [-]]<<
+ # set 12 for else flag
+ >>[-]+<<
+ # if NOT 11 neq 6$ then set 8 breaking 11 12
+ >------[>-< ------[-]]< >>[<<<<+>>>> [-]]<<
+
+ # 10 11 copied 6 breaking 12
+ [-]>[-]>[-]<<
+ <<<<[>>>>+>+>+<<<<<<-]>>>> >>[<< <<<<+>>>> >>-]<<
+ # set 12 for else flag
+ >>[-]+<<
+ # if 10 neq 6$ then set 9 else set 8 breaking 10 12
+ ------[<+> >>-<< ++++++[-]] >>[<<<<+>>>> [-]]<<
+ # set 12 for else flag
+ >>[-]+<<
+ # if NOT 11 neq 4$ then set 7 breaking 11 12
+ >----[>-< ----[-]]< >>[<<<<<+>>>>> [-]]<<
+
+ # break line
+ >+>+>+>+>+>+>+>+>+>+<<<<<<<<<<
+
+ # 11 copied 9 breaking 12
+ >[-]>[-]<< <[>>+>+<<<-]> >>[<<<+>>>-]<<
+ # clear 10
+ [-]
+ # set 12 for else flag
+ >>[-]+<<
+ # if NOT 11 neq zero then set 10 breaking 11 12
+ >[>-<[-]]< >>[<<+>>[-]]<<
+ # flat 10 to 3
+ <<<<<<<
+
+ ## print the number
+ # if 4 is nonzero then print 3 breaking 4
+ >[<.>[-]]<
+ # print 5
+ >>.<<
+ # flat 3 to 7
+ >>>>
+ # if 7 and 9 then print 46$ breaking 11 12
+ # 11 copied 7 breaking 12
+ >>>>[-]>[-]<<<<<
+ [>>>>+>+<<<<<-]>>>>>[<<<<<+>>>>>-]<<<<<
+ >>>>[
+  # flat 11
+  # 11 copied 9 breaking 12
+  [-]>[-]<
+  << [>>+>+<<<-]>>>[<<<+>>>-]<<< >>
+  [
+   # print <<<<<<<<<<< <[-][ " シロ"; [32, 12471, 12525] ]> >>>>>>>>>>> breaking from 11
+   [-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]<<<<<<<
+   ++++++++++[>++++++++++[>++++++++++[>++++++++++[> >+>+ << <-]> >++>++ << < <-]>> >++++>+++++ << << <-]>>> +++>+++++++>++ << <<< <-]>>>> ++.>+.>+++++ . << <<<<
+   # ensure that 11 is zero and flat is 11
+   [-]
+  ]
+ ]<<<<
+ # flat 7 to 8
+ >
+ # if 8 and 9 then print 47$ breaking 11 12
+ # 11 copied 8 breaking 12
+ >>>[-]>[-]<<<<
+ [>>>+>+<<<<-]>>>>[<<<<+>>>>-]<<<<
+ >>>[
+  # flat 11
+  # 11 copied 9 breaking 12
+  [-]>[-]<
+  << [>>+>+<<<-]>>>[<<<+>>>-]<<< >>
+  [
+   # print <<<<<<<<<<< <[-][ " まんぼう"; [32, 12414, 12435, 12412, 12358] ]> >>>>>>>>>>> breaking from 11
+   [-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]<<<<<<<<<
+   ++++++++++[>++++++++++[>++++++++++[>++++++++++[> >+>+>+>+ <<<< <-]> >++>++>++>++ <<<< < <-]>> >++++>++++>++++>+++ <<<< << <-]>>> +++>+>+++>+>+++++ <<<< <<< <-]>>>> ++.>++++.>+++++.>++.>++++++++ . <<<< <<<<
+   # ensure that 11 is zero and flat is 11
+   [-]
+  ]
+ ]<<<
+ # flat 8 to 10
+ >>
+ # if 10 then print 48$ breaking 11 12
+ # 11 copied 10 breaking 12
+ >[-]>[-]<< [>+>+<<-]>>[<<+>>-]<<
+ >[
+  # flat 11
+  # print <<<<<<<<<<< <[-][ birthday AA! ]> >>>>>>>>>>> breaking from 11
+  [-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]>[-]<<<<<<<<<<<<<
+  ++++++++++[>++++++++++[>++++++++++[>++++++++++[> >+>+>+>+>+>+>+>+ <<<<<<<< <-]> >++>++>++>++>++>++>++>++ <<<<<<<< < <-]>> >+++>++++>+++>++++>+++>++++>+++>++++ <<<<<<<< << <-]>>> +++>+++++++>++>+++++++>++>+++++++>++>+++++++>++ <<<<<<<< <<< <-]>>>> ++.>+++++.>+++++++++.>+++++.>+++++++++.>+++++.>+++++++++.>+++++.>+++++++++ . <<<<<<<< <<<<
+  [-]++++++++++.
+  # ensure that 11 is zero and flat is 11
+  [-]
+ ]<
+ # flat 10 to 2
+ <<<<<<<<
+ # print return breaking 2
+ [-]++++++++++.
+ # flat 2 to 1
+ <
+
+ # ensure flat 1
+<-]
